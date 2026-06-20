@@ -214,7 +214,7 @@ def generate_prompt(keyword, poster=True, vertical=True, style_override="自动�
         prompt_parts.extend(POSTER_TERMS)
 
     if vertical:
-        prompt_parts.append("vertical composition, 3:4 aspect ratio")
+        prompt_parts.append("vertical composition, 2:3 aspect ratio")
 
     return ",\n".join(prompt_parts), config["name"], subject, composition
 
@@ -227,7 +227,7 @@ col1, col2 = st.columns(2)
 with col1:
     poster_mode = st.checkbox("用于海报设计", value=True)
 with col2:
-    vertical_mode = st.checkbox("竖版 3:4", value=True)
+    vertical_mode = st.checkbox("竖版 2:3", value=True)
 
 style_options = ["自动识别"] + [STYLE_CONFIG[k]["name"] for k in STYLE_CONFIG]
 style_override = st.selectbox("禅意风格", style_options)

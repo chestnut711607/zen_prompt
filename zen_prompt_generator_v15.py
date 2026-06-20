@@ -280,13 +280,4 @@ if st.button("生成提示词", type="primary"):
             mime="text/plain"
         )
 
-st.divider()
-
-with st.expander("V1.5 优化内容"):
-    st.write("1. 保留 V1：用户只输入一个关键词。")
-    st.write("2. 新增：侘寂禅意、茶禅、生命禅意、家庭禅意、文化禅意、静心生态。")
-    st.write("3. 新增：抽象概念映射，例如“智慧、成长、自在、希望、共生、法务”。")
-    st.write("4. 新增：根据关键词自动匹配构图方式。")
-    st.write("5. 默认更偏向温暖、生命力、光明的禅意，而不是灰色棕色的枯寂感。")
-
 st.caption("适用于 Midjourney、即梦、GPT 图像、Flux、Stable Diffusion 等 AI 绘图工具。")
